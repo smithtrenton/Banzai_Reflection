@@ -1,4 +1,4 @@
-from banzai.types import base
+from banzai.client import base
 
 
 class Node(base.RSObject):
