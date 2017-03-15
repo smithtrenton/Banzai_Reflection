@@ -4,7 +4,7 @@ from banzai.client import actor
 def get_all(name_id=None, filter_func=None):
     npcs = actor.get_npcs()
     if name_id is not None:
-        if isinstance(name_id, basestring):
+        if isinstance(name_id, str):
             npcs = list(filter(lambda npc: npc.get_name() == name_id, npcs))
         elif isinstance(name_id, int):
             npcs = list(filter(lambda npc: npc.get_id() == name_id, npcs))
